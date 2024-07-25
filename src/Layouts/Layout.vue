@@ -105,7 +105,7 @@ const scrollToElement = (target, delay) => {
     if (element) {
       const navbarHeight = document.querySelector('header').offsetHeight;
       window.scrollTo({
-        top: element.offsetTop - navbarHeight, // Adjust for fixed header height
+        top: element.offsetTop - navbarHeight,
         behavior: 'smooth',
       });
     }
