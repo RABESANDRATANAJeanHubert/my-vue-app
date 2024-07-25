@@ -51,7 +51,7 @@
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Current Address</div>
-                                <div class="px-4 py-2">Fianarantsoa, Madagascar</div>
+                                <div class="px-4 py-2">Antananarivo, Madagascar</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Permanent Address</div>
@@ -96,7 +96,7 @@
                             <ul class="list-inside space-y-2">
                                 <li>
                                     <div class="text-teal-600">Professional Master's Degree in Computer Science</div>
-                                    <div class="text-gray-500 text-xs">2021-2022, National School of Computer Science (ENI), University of Fianarantsoa</div>
+                                    <div class="text-gray-500 text-xs text-md">2021-2022, National School of Computer Science (ENI), University of Fianarantsoa</div>
                                 </li>
                                 <li>
                                     <div class="text-teal-600">Professional Bachelor's Degree in Computer Science</div>
