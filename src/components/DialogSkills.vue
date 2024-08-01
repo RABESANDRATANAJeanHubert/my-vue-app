@@ -14,19 +14,6 @@
               <p class="text-sm font-medium">{{ selectedSkill.name }}</p>
             </div>
           </div>
-          <button
-            @click="closeDialog"
-            class="p-0 w-10 h-10 bg-black rounded-full hover:bg-black active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none"
-          >
-            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6 inline-block">
-              <path
-                fill="#FFFFFF"
-                d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
-                        C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
-                        C15.952,9,16,9.447,16,10z"
-              />
-            </svg>
-          </button>
         </div>
         <div class="p-4 text-blue-gray-500">
           <div class="bg-white">
@@ -35,7 +22,6 @@
                 class="bg-fixed relative col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-8 xxl:col-span-8 hidden md:block"
                 :style="backgroundStyle"
               >
-
               </div>
               <div class="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-4 xxl:col-span-4">
                 <div>
@@ -115,7 +101,6 @@ const props = defineProps({
 })
 
 const emit = defineEmits([event.closeDialog])
-const closeDialog = () => { emit(event.closeDialog) }
 const isShowDialog = computed(() => props.showDialog ? 'opacity-100 scale-100' : 'opacity-0 scale-90')
 const backgroundStyle = computed(() => ({
   backgroundImage: `url(${props.selectedSkill.image})`,

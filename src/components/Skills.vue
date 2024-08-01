@@ -11,18 +11,19 @@
           v-for="(skill, index) in skills"
           :key="index"
           class="w-full bg-white rounded-lg p-6 flex flex-col justify-center items-center cursor-pointer shadow-md"
-          @mouseenter="showFrameworks(index)"
-          @mouseleave="hideFrameworks(index)"
-          @click="openDialog(skill)"
+          @mouseenter="openDialog(skill)"
+          @mouseleave="closeDialog"
         >
           <div class="mb-4">
             <img class="object-center object-cover rounded-full h-36 w-36" :src="`${skill.image}`" :alt="skill.name">
           </div>
           <div class="text-center">
             <p class="text-xl text-gray-700 font-bold mb-2 custom-name">{{ skill.name }}</p>
-            <p class="text-base text-gray-400 font-normal custom-description" >   <button
-                class="block w-full text-blue-800 text-sm font-semibold rounded-lg focus:outline-none focus:shadow-outline  hover:shadow-xs p-3 my-4">
-                Show more detail ...</button></p>
+            <p class="text-base text-gray-400 font-normal custom-description">
+              <button class="block w-full text-blue-800 text-sm font-semibold rounded-lg focus:outline-none focus:shadow-outline hover:shadow-xs p-3 my-4">
+                Show more detail ...
+              </button>
+            </p>
           </div>
           <transition name="fade">
             <ul v-if="skill.showFrameworks" class="absolute bottom-0 left-0 right-0 bg-white rounded-b-lg p-2 shadow-md">
@@ -42,7 +43,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import DialogSkills from './DialogSkills.vue'; 
+import DialogSkills from './DialogSkills.vue';
 import { skilList } from '../models';
 
 const skills = ref(skilList);
