@@ -46,7 +46,7 @@ export const skilList = [
 
   export const experiences = [
     { 
-      name: '2023-2024', 
+      name: 'November 2023 - July 2024', 
       description: `
         <p><strong>Frontend Developer at IOTHYS in Mauritius with INSYNIUM Company.</strong></p>
         <p><strong>Methods</strong>: PLM and SOLINGS</p>
@@ -54,7 +54,7 @@ export const skilList = [
       `
     },
     { 
-      name: '2022-2023', 
+      name: 'April 2022 - November 2023', 
       description: `
         <p><strong>Developed a client space management application MYCPP for the CPP card in Madagascar.</strong></p>
         <p><strong>Technologies</strong>: Vue JS</p>
@@ -63,7 +63,7 @@ export const skilList = [
       `
     },
     { 
-      name: 'November 2022', 
+      name: 'February 2022 - November 2022', 
       description: `
         <p><strong>Freelance project (CMS PROJECT)</strong></p>
         <p><strong>Frontend</strong>: React Material UI with Typescript using NEXTJS Framework</p>
@@ -76,18 +76,19 @@ export const skilList = [
         <p><strong>Defended for International Certificate in English C2 from ITTI (International Tesol Training Institute), Madagascar.</strong></p>
       `
     },
+   
     { 
-      name: 'November 2021', 
+      name: 'November 2020 - July 2021', 
+      description: `
+        <p><strong>Developed a banking management application at SAYNA using Laravel for Backend and Vue for Frontend</strong></p>
+      `
+    },
+    { 
+      name: 'March 2020 - September 2020', 
       description: `
         <p><strong>Freelance project (International Salary Portage)</strong></p>
         <p>Frontend: Vue JS with Quasar Framework</p>
         <p>Backend: NEST JS</p>
-      `
-    },
-    { 
-      name: 'March 2020', 
-      description: `
-        <p><strong>Developed a banking management application at SAYNA using Laravel for Backend and Vue for Frontend</strong></p>
       `
     }
     // Add more projects as needed

@@ -44,6 +44,7 @@ export const messages = {
         fields: {
           first_name: "First Name",
           last_name: "Last Name",
+          name: 'RABESANDRATANA',
           gender: "Gender",
           contact_no: "Contact No.",
           current_address: "Current Address",
